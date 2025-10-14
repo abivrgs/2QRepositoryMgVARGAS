@@ -37,7 +37,7 @@ h1 {
 p {
   font-size: 1.2vw;
   color: white;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Helvetica", Arial, sans-serif;
   text-align: center;
   margin: 0 auto 60px;
   width: 80%;
@@ -166,23 +166,37 @@ footer p {
 }
 
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 47px;
   background: rgba(255, 255, 255, 0.578);
   backdrop-filter: blur(10px);
   color: black;
   font-family: "Avantgarde", sans-serif;
   font-weight: bold;
-  width: 210px;
-  height: 47px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 18px;
-  transition: 0.3s;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
-a {
+.box a {
+  color: rgba(64, 60, 86, 0.845);
   text-decoration: none;
-  color: rgb(68, 83, 121);
+  font-family: "Avantgarde", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.box a:hover {
+  color: #abd3fc; 
+  text-shadow: 
+    0 0 5px #abd3fc,
+    0 0 10px #abd3fc,
+    0 0 20px #abd3fc,
+    0 0 40px #abd3fc;
 }
 
 .banner-image {
