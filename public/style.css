@@ -25,27 +25,23 @@ body {
   font-style: normal;
 }
 
-
 h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   color: white;
-  position: absolute;
-  font-family: "enhypen", arial;
-  top: 102%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+  font-family: "enhypen", Arial;
+  text-align: center;
+  margin: 40px 0 20px;
+  position: relative;
 }
 
-p{
-    font-size: 1.3vw;
-    color: white;
-    position: absolute;
-    font-family: "Roboto Mono";
-    top: 130%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-padding-bottom: 40px;
+p {
+  font-size: 1.2vw;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  margin: 0 auto 60px;
+  width: 80%;
+  position: relative;
 }
 
 
@@ -58,6 +54,32 @@ padding-bottom: 40px;
   object-fit: cover;
   z-index: -1;    
 }
+
+
+.member_pics {
+ display: flex;
+  flex-wrap: wrap;           
+  justify-content: center;   
+
+  margin-top: 170vh;
+  justify-content: center;  
+  gap: 20px;               
+}
+
+.member-img {
+  width: 190px;            
+  height: auto;
+  border-radius: 50%;
+}
+
+.member-name {
+  margin-top: 10px;          
+  font-family: "Roboto Mono";
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
 
 .header-image
 {
@@ -86,10 +108,10 @@ header {
 html, body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 170vh; /*ADJUST MAMAYA PLS*/
-  overflow-x: hidden; 
-  overflow-y: auto;   
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -99,54 +121,48 @@ main {
   padding-bottom: 40px;
 }
 
-.footer {
+footer {
+  background-color: #c9c9c9;  /* light gray background */
+  color: black;
+  text-align: center;
+  font-family: "enhypen", Arial, sans-serif;
+  padding: 30px 0 10px;
+  margin-top: 80px;
+}
+
+footer h2 {
   font-family: "enhypen";
-  font-size: 1.5vw;
-  width: 100%;
-  padding: 3vh 5vw 0.5vh;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+footer .social-icons {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  backdrop-filter: blur(100px);
-  background: rgba(238, 238, 238, 0.812);
-  color: rgb(17, 15, 15);
-  z-index: 10;
-  margin-top: 170vh;   /* adjust HERE ASWELL*/
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
 }
 
-
-.footer .footer-right {
-  font-size: 1.0vw;
-  font-family: "Roboto Mono";
-  border-width: 50px;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-bottom: 0;
-  position: absolute;
-  right: 12vw;
-}
-
-.footer .social-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.footer .social-icons a img {
+footer .social-icons a img {
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease;
 }
 
-.footer .social-icons a img:hover {
+footer .social-icons a img:hover {
   transform: scale(1.2);
+}
+
+footer p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .top-boxes {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 
 .box {
@@ -172,4 +188,55 @@ bottom: 0;
 a {
   text-decoration: none;
   color: rgb(130, 58, 13);
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1px;
+}
+
+.members-heading {
+  font-family: "enhypen";
+  font-size: 3.5rem;
+  color: white;
+  text-align: center;
+  margin: 60px 0 20px;
+}
+
+.members {
+  margin-top: 10vh;
+  margin-bottom: 0;
+  max-width: 95vw;
+  background-color: rgba(116, 127, 170, 0.196);
+  color: white;
+  box-shadow: 0 0 10px rgba(6, 12, 57, 0.434);
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.members table {
+  font-family: "Roboto Mono", monospace;
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.members th {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.members td {
+  font-family: "Roboto Mono", monospace;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: left;
+  font-size: 0.9rem;
 }
