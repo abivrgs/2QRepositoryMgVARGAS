@@ -72,6 +72,15 @@ p {
   z-index: 11;    
 }
 
+.members td:hover,
+.members th:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+  text-shadow: 0 0 10px #4f60aee1;
+  transition: all 0.3s ease;
+}
+
+
 header {
   position: fixed;
   top: 0;
@@ -167,9 +176,23 @@ footer p {
 }
 
 .box a:hover {
-  color: #7080c9e1; 
+  color: #4261d2e1; 
   text-shadow: 
-    0 0 5px #7080c9e1;
+    0 0 5px #8495dfe1;
+}
+
+a:link {
+  color: rgba(255, 255, 255, 0.845);
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d4d1e3; /* or another muted shade */
+}
+
+a:hover {
+  color: #7080c9e1;
+  text-shadow: 0 0 5px #7080c9e1;
 }
 
 .banner-image {
